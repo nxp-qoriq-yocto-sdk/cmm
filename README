@@ -1,0 +1,7 @@
+Conntrack Monitor Module For Fast Forward. It monitors the Linux connection table 
+and adds or removes connections from the Forward Engine connection table.
+
+CMM is split in several threads. Each thread is responsible for capturing one type 
+of event. One thread captures the events happening on Linux connection tracking 
+system. A second thread captures the events happening on Forward Engine (FE), 
+and the third thread manages the Command Line Interface (CLI).
